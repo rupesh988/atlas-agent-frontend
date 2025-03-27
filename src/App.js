@@ -80,7 +80,8 @@ function App() {
         socket.emit("keepalive", { 
           timestamp: Date.now(),
           client: "web-ui"
-        });
+        }); 
+        //
         
         // Fallback: Verify connection state
         if (!socket.connected) {
